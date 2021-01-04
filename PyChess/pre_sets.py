@@ -1,9 +1,13 @@
-def setBoard():
-    board = dict()
-    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-    for i in range(1, 9):
-        for j in letters:
-            board[f'{j}{i}'] = ''
-    return board
+class ChessBoard:
+    def __init__(self):
+        pass
+    def setBoard(self):
+        self.boardDict = dict()
+        letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+        for i in range(1, 9):
+            for j in letters:
+                self.boardDict[f'{j}{i}'] = ''
+        return self.boardDict
 
-print(setBoard())
+Board = ChessBoard()
+print(Board.setBoard())
