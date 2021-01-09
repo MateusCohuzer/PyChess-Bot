@@ -14,4 +14,4 @@ class ChessBoard:
         
 
 Board = ChessBoard()
-print()
+print(Board)
